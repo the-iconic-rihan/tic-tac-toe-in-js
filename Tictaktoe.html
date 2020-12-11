@@ -1,0 +1,43 @@
+<!-- tic tac toe game in html and js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="tic.css">
+
+</head>
+<body onload="startgame()">
+    <center>
+        <h1>Tic-Tac-Toc game !</h1>
+        <div class="result" id="message">Result</div>
+        <div class="game">
+            <table>
+                <tr class="tr">
+                    <td id="s1" class="square" onclick="nextMove(this)"></td>
+                    <td id="s2" class="square" onclick="nextMove(this)"></td>
+                    <td id="s3" class="square" onclick="nextMove(this)"></td>
+                </tr>
+                <tr>
+                    <td id="s4" class="square" onclick="nextMove(this)"></td>
+                    <td id="s5" class="square" onclick="nextMove(this)"></td>
+                    <td id="s6" class="square" onclick="nextMove(this)"></td>
+                </tr>
+                <tr>
+                    <td id="s7" class="square" onclick="nextMove(this)"></td>
+                    <td id="s8" class="square" onclick="nextMove(this)"></td>
+                    <td id="s9" class="square" onclick="nextMove(this)"></td>
+                </tr>
+            </table>
+            <button onclick="startgame()" id="button" >Start the new game!!!</button>
+        </div>
+    </center>
+    
+    <footer id="footer">
+         Made by : <img id="gitimage" src="githublogo.png"><a  id="name" href="https://github.com/the-iconic-rihan">the-iconic-rihan</a>
+    </footer>
+
+</body>
+<script type="text/javascript" src="tic.js"></script>
+</html>
